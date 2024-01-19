@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }
 
+body {
+	box-sizing: border-box;
+	overflow-x: hidden !important;
+}
+
 :root {
     --primary-color: rgb(31, 131, 221);
     --secondary-color: rgb(31, 131, 221);
@@ -36,8 +41,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 5px 100px;
+    padding: 5px 10px;
 }
 
 .moto {
@@ -171,4 +175,20 @@ section h2 span {
 
 .desc h3 {
     color: white;
+}
+
+@media (max-width: 830px) {
+	.logo {
+		width: 20rem;
+	}
+}
+
+@media (max-width: 617px) {
+	.logo {
+		width: 20rem;
+	}
+
+	.moto {
+		font-size: 1.3rem;
+	}
 }
